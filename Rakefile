@@ -47,7 +47,7 @@ namespace :job do
       Kernel.exit(true)
     end
 
-    repo_names = ['kongregate/kongregate']
+    repo_names = ['kongregate//github-status-repeater']
 
     app = PuppetCommunityData::Application.new
     app.setup_environment
@@ -59,7 +59,7 @@ namespace :job do
   desc "Import pull requests into the DB"
   task :import => :environment do |t|
 
-    repo_names = ['kongregate/kongregate']
+    repo_names = ['kongregate//github-status-repeater']
 
     app = PuppetCommunityData::Application.new
     app.setup_environment
