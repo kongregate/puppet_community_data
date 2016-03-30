@@ -58,7 +58,7 @@ describe PuppetCommunityData::Application do
       end
 
       it 'sets auto_traversal to true to get paginated results' do
-        expect(subject.github_api.auto_traversal).to eq(true)
+        expect(subject.github_api.auto_paginate).to eq(true)
       end
     end
 
